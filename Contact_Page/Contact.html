@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AeroSim</title>
+    <link rel="stylesheet" href="Contactstyle.css">
+    <link rel="stylesheet" href="../css/back-button.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <!-- simple-script.js gives the navbar (Login/Logout) and helper functions -->
+    <script src="../js/simple-script.js" defer></script>
+    <!-- contact.js has the code for THIS page only (must come after simple-script.js) -->
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <a class="logo" href="../Main_Page/index.html">
+            <img class="brand-mark" src="../css/aerosim-mark.svg" alt="">
+            <span>AeroSim</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="../Main_Page/index.html">Home</a></li>
+                <li><a href="../About_Page/About.html">About</a></li>
+                <li><a href="../Contact_Page/Contact.html" aria-current="page">Contact</a></li>
+                <li><a href="../Tracking_Page/Track.html">Track bags</a></li>
+                <li><a class="profile" href="../Profile_Page/Profile.html">Profile</a></li>
+
+                <li><a class="btn btn-register" href="../Register_Page/Register_index_page.html">Register</a></li>
+                <li><a class="btn btn-login" href="../Login_Page/Login_index_page.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <a href="../Main_Page/index.html" class="back-btn">&larr; Home</a>
+
+    <main>
+        <section class="page-card">
+            <h1>Contact us</h1>
+            <p>Have a question about your baggage or your account? Fill in the form and send us your query.</p>
+
+            <!-- ===== CONTACT FORM STRUCTURE ===== -->
+            <form class="contact-form" id="contactForm">
+
+                <label for="contactName">Full name</label>
+                <input id="contactName" type="text" placeholder="Enter your full name" required>
+
+                <label for="contactEmail">Email address</label>
+                <input id="contactEmail" type="email" placeholder="e.g., user123@gmail.com" required>
+
+                <label for="contactSubject">Query type</label>
+                <select id="contactSubject" required>
+                    <option value="">-- Select a topic --</option>
+                    <option>Baggage tracking</option>
+                    <option>Lost or delayed bag</option>
+                    <option>Account or login problem</option>
+                    <option>Feedback or suggestion</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="contactBagTag">Bag tag number (optional)</label>
+                <input id="contactBagTag" type="text" placeholder="e.g., AS1092">
+
+                <label for="contactMessage">Your query</label>
+                <textarea id="contactMessage" placeholder="Write your question here..." required></textarea>
+
+                <button type="submit">Send query</button>
+                <p id="message" aria-live="polite"></p>
+            </form>
+
+            <!-- ===== SAVED QUERIES (filled by contact.js) ===== -->
+            <div class="saved-queries">
+                <h2>Queries sent from this browser</h2>
+                <div id="queryList"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="../Main_Page/index.html">Home</a></li>
+                <li><a href="../About_Page/About.html">About</a></li>
+                <li><a href="Contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 AeroSim. All rights reserved.</p>
+    </footer>
+</body>
+</html>

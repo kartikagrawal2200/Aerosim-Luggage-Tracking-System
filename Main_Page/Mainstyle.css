@@ -1,0 +1,167 @@
+main {
+    padding-bottom: 64px;
+}
+
+.content-wrapper {
+    position: relative;
+    display: flex;
+    min-height: 520px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    padding: clamp(34px, 8vw, 100px);
+    background:
+        linear-gradient(90deg, rgba(5, 28, 69, 0.88) 0%, rgba(5, 28, 69, 0.67) 48%, rgba(5, 28, 69, 0.08) 100%),
+        url("images/airplane_climb.jpg") center 42% / cover;
+    color: #fff;
+}
+
+.content-wrapper::before {
+    content: "FLY EASY. TRAVEL LIGHT.";
+    margin-bottom: 18px;
+    color: #ffd16f;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.content-wrapper h1 {
+    max-width: 680px;
+    margin: 0 0 16px;
+    color: #fff;
+    font-size: clamp(38px, 6vw, 68px);
+    letter-spacing: -2px;
+    line-height: 1.06;
+}
+
+.content-wrapper > p {
+    max-width: 580px;
+    margin: 0 0 28px;
+    color: #e8effb;
+    font-size: 17px;
+}
+
+.tracker-container {
+    width: min(100%, 620px);
+    padding: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+}
+
+.tracker-form {
+    display: flex;
+    gap: 8px;
+}
+
+.tracker-input {
+    flex: 1;
+    border-color: transparent;
+}
+
+.tracker-btn {
+    flex: 0 0 auto;
+    padding-inline: 22px;
+}
+
+.tracker-container #message {
+    padding: 0 12px;
+}
+
+.how-it-works {
+    width: min(100% - 40px, 1280px);
+    margin: 56px auto 0;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: clamp(28px, 4vw, 38px);
+    letter-spacing: -1px;
+}
+
+.how-intro {
+    max-width: 620px;
+    margin: 0 auto 30px;
+    color: var(--muted);
+}
+
+.how-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.how-card {
+    position: relative;
+    min-height: 190px;
+    padding: 25px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 22px rgba(9, 44, 107, 0.05);
+}
+
+.step-number {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    color: #9aabc2;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.step-icon {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    background: var(--sky);
+    color: var(--blue);
+}
+
+.how-card h3 {
+    margin: 0 0 6px;
+    color: var(--navy);
+    font-size: 16px;
+}
+
+.how-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+@media (max-width: 760px) {
+    .content-wrapper {
+        min-height: 500px;
+        background-position: 58% center;
+    }
+
+    .how-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .tracker-form {
+        flex-direction: column;
+    }
+
+    .tracker-btn {
+        width: 100%;
+    }
+
+    .how-steps {
+        grid-template-columns: 1fr;
+    }
+}

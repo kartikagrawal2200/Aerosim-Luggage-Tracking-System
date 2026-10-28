@@ -1,0 +1,26 @@
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin: 18px 0 0 clamp(20px, 5vw, 72px);
+    padding: 7px 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: background 160ms ease, transform 160ms ease;
+}
+
+.back-btn:hover {
+    background: var(--sky);
+    transform: translateX(-2px);
+}
+
+@media (max-width: 760px) {
+    .back-btn {
+        margin-left: 20px;
+    }
+}

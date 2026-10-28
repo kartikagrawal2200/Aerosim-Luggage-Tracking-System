@@ -1,0 +1,45 @@
+.main {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    max-width: 520px;
+}
+
+.success-badge {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: #e8f7ef;
+    color: var(--success);
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.profile-row {
+    margin-top: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+}
+
+.profile-row .label {
+    margin: 0 0 3px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.profile-row .value {
+    margin: 0;
+    color: var(--ink);
+    font-size: 17px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.logout-btn {
+    width: 100%;
+    margin-top: 26px;
+}

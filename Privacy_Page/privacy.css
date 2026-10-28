@@ -1,0 +1,7 @@
+.page-card {
+    max-width: 940px;
+}
+
+.page-card section + section {
+    padding-top: 2px;
+}

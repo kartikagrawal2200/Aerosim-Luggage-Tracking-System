@@ -1,0 +1,44 @@
+.page-card {
+    max-width: 680px;
+}
+
+.contact-form {
+    gap: 9px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    margin-bottom: 6px;
+}
+
+.saved-queries {
+    margin-top: 34px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+}
+
+.saved-queries h2 {
+    margin-top: 0;
+}
+
+.saved-queries .empty {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.query-item {
+    margin: 10px 0;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #f8fbff;
+    color: var(--ink);
+    font-size: 14px;
+}
+
+.query-item .meta {
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 12px;
+}

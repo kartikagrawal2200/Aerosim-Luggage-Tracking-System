@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | AeroSim</title>
+    <link rel="stylesheet" href="Profilestyle.css">
+    <link rel="stylesheet" href="../css/back-button.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <script src="../js/simple-script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <a class="logo" href="../Main_Page/index.html">
+            <img class="brand-mark" src="../css/aerosim-mark.svg" alt="">
+            <span>AeroSim</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="../Main_Page/index.html">Home</a></li>
+                <li><a href="../Login_Page/Login_index_page.html">Login</a></li>
+                <li><a href="../Register_Page/Register_index_page.html">Register</a></li>
+                <li><a href="../Tracking_Page/Track.html">Track bags</a></li>
+                <li><a href="Profile.html" aria-current="page">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="../Main_Page/index.html" class="back-btn">&larr; Home</a>
+
+    <main class="main">
+        <section class="auth-card">
+            <h1>My Profile</h1>
+            <p>Your account details are shown below.</p>
+
+            <span class="success-badge">✓ Registered successfully</span>
+
+            <div class="profile-row">
+                <p class="label">Full name</p>
+                <p class="value" id="profileName"></p>
+            </div>
+
+            <div class="profile-row">
+                <p class="label">Email address</p>
+                <p class="value" id="profileEmail"></p>
+            </div>
+
+            <div class="profile-row">
+                <p class="label">Registered on</p>
+                <p class="value" id="profileDate"></p>
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p><a href="../Main_Page/index.html">Home</a> | <a href="../About_Page/About.html">About</a> | <a href="../Contact_Page/Contact.html">Contact</a></p>
+        <p>&copy; 2026 AeroSim. All rights reserved.</p>
+    </footer>
+</body>
+</html>

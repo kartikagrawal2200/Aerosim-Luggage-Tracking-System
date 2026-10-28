@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | AeroSim</title>
+    <link rel="stylesheet" href="Loginstyle.css">
+    <link rel="stylesheet" href="../css/back-button.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <script src="../js/simple-script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <a class="logo" href="../Main_Page/index.html">
+            <img class="brand-mark" src="../css/aerosim-mark.svg" alt="">
+            <span>AeroSim</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="../Main_Page/index.html">Home</a></li>
+                <li><a href="../About_Page/About.html">About</a></li>
+                <li><a href="../Contact_Page/Contact.html">Contact</a></li>
+                <li><a href="../Tracking_Page/Track.html">Track bags</a></li>
+                <li><a class="profile" href="../Profile_Page/Profile.html">Profile</a></li>
+
+                <li><a class="btn btn-register" href="../Register_Page/Register_index_page.html">Register</a></li>
+                <li><a class="btn btn-login" href="../Login_Page/Login_index_page.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <a href="../Main_Page/index.html" class="back-btn">&larr; Home</a>
+
+    <main>
+        <section class="auth-card" aria-labelledby="login-heading">
+            <h1 id="login-heading">Welcome back</h1>
+            <p>Login to manage your baggage tracking.</p>
+            <p class="auth-notice" id="authNotice" hidden></p>
+            <form class="auth-form" id="loginForm">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+                <p id="message" aria-live="polite"></p>
+            </form>
+            <p class="auth-switch">New to AeroSim? <a href="../Register_Page/Register_index_page.html">Create an account</a></p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p><a href="../Main_Page/index.html">Home</a> | <a href="../About_Page/About.html">About</a> | <a href="../Contact_Page/Contact.html">Contact</a></p>
+        <p>&copy; 2026 AeroSim. All rights reserved.</p>
+    </footer>
+</body>
+</html>

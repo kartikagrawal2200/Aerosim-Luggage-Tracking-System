@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroSim - Baggage Journey</title>
+    <link rel="stylesheet" href="Trackstyle.css">
+    <link rel="stylesheet" href="../css/back-button.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <script src="../js/simple-script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <a class="logo" href="../Main_Page/index.html">
+            <img class="brand-mark" src="../css/aerosim-mark.svg" alt="">
+            <span>AeroSim</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="../Main_Page/index.html">Home</a></li>
+                <li><a href="../About_Page/About.html">About</a></li>
+                <li><a href="../Contact_Page/Contact.html">Contact</a></li>
+                <li><a href="../Tracking_Page/Track.html" aria-current="page">Track bags</a></li>
+                <li><a class="profile" href="../Profile_Page/Profile.html">Profile</a></li>
+
+                <li><a class="btn btn-register" href="../Register_Page/Register_index_page.html">Register</a></li>
+                <li><a class="btn btn-login" href="../Login_Page/Login_index_page.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <a href="../Main_Page/index.html" class="back-btn">&larr; Home</a>
+
+    <main class="page">
+        <h1>Welcome To AeroSim</h1>
+        <p class="subtitle">Your baggage journey, in your hands.</p>
+
+        <div class="layout">
+
+            <!-- Left Column -->
+            <section class="left-col">
+                <h2>Passenger and Baggage Details</h2>
+
+                <!-- Profile -->
+                <div class="card profile-card">
+                    <div class="avatar">U</div>
+                    <div>
+                        <h3 id="userName">User2244</h3>
+                        <p class="status">● Active Account</p>
+                        <p class="label" id="userEmail"></p>
+                    </div>
+                </div>
+
+                <!-- Bag Details -->
+                <div class="card">
+                    <div class="bag-top">
+                        <div>
+                            <p class="label">Bag ID:</p>
+                            <h3 id="bagTitle">AS1092</h3>
+                        </div>
+                        <span class="badge" id="bagStatus">✓ Completed</span>
+                    </div>
+
+                    <div class="details">
+                        <p class="label">Baggage Tag ID</p>
+                        <p class="value" id="bagTag">AS1092</p>
+
+                        <p class="label">Airline & Flight</p>
+                        <p class="value" id="bagAirline">Airline-LH2055</p>
+
+                        <p class="label">Flight Route</p>
+                        <p class="value" id="bagRoute">BOM ( Chhatrapati Shivaji Maharaj International Airport) → DEL (Indira Gandhi International Airport)</p>
+
+                        <p class="label">Passenger & Weight</p>
+                        <p class="value" id="bagPassenger">R*** S. • 23.5 kg (Navy Blue)</p>
+
+                        <p class="label">Departure & Arrival</p>
+                        <p class="value" id="bagGate">Gate B22 → Carousel Belt 4</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Column -->
+            <section class="right-col">
+
+                <!-- Baggage Journey -->
+                <div class="card">
+                    <div class="journey-head">
+                        <h3>Baggage Journey</h3>
+                    </div>
+
+                    <ol class="timeline" id="timeline">
+                        <li class="step">
+                            <span class="step-icon">✓</span>
+                            <div>
+                                <h4>1. CHECK-IN COMPLETE</h4>
+                                <p>Your bag has been checked in and tagged with a unique IATA barcode.</p>
+                            </div>
+                            <span class="badge">✓ Completed</span>
+                        </li>
+
+                        <li class="step">
+                            <span class="step-icon">✓</span>
+                            <div>
+                                <h4>2. BAGGAGE HANDLING</h4>
+                                <p>Baggage passes automated security X-rays and conveyor sortation hubs.</p>
+                            </div>
+                            <span class="badge">✓ Completed</span>
+                        </li>
+
+                        <li class="step">
+                            <span class="step-icon">✓</span>
+                            <div>
+                                <h4>3. AIRCRAFT LOADING</h4>
+                                <p>Secured inside Unit Load Devices (ULD) and hoisted into the cargo hold.</p>
+                            </div>
+                            <span class="badge">✓ Completed</span>
+                        </li>
+
+                        <li class="step">
+                            <span class="step-icon">✓</span>
+                            <div>
+                                <h4>4. FLIGHT IN TRANSIT</h4>
+                                <p>Baggage is safely in flight cruise towards the destination airport.</p>
+                            </div>
+                            <span class="badge">✓ Completed</span>
+                        </li>
+
+                        <li class="step">
+                            <span class="step-icon">✓</span>
+                            <div>
+                                <h4>5. ARRIVAL AT DESTINATION</h4>
+                                <p>Bag has been unloaded and moved to the arrival terminal.</p>
+                            </div>
+                            <span class="badge">✓ Completed</span>
+                        </li>
+
+                        <li class="step current">
+                            <span class="step-icon">✓</span>
+                            <div>
+                                <h4>6. ARRIVAL CLAIM STAGE</h4>
+                                <p>Bag is on Carousel Belt 4, ready for collection.</p>
+                            </div>
+                            <span class="badge active">In Progress</span>
+                        </li>
+                    </ol>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+        <footer class="main-footer">
+        <p><a href="../Main_Page/index.html">Home</a> | <a href="../About_Page/About.html">About</a> | <a href="../Contact_Page/Contact.html">Contact</a></p>
+        <p>&copy; 2026 AeroSim. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.page-card {
+    max-width: 980px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.steps li {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: #f8fbff;
+}
+
+.steps .num {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    font-weight: 800;
+}
+
+.steps h3 {
+    margin: 0 0 6px;
+    color: var(--navy);
+    font-size: 17px;
+}
+
+.steps p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.stage-list {
+    line-height: 1.8;
+}
